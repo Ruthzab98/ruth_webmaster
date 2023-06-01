@@ -1,0 +1,35 @@
+h1{
+    color:red; /*este es un comentario en css*/
+    /*este codigo sirve para cambiar el color*/
+    background-color: rgb(43, 180, 162); /*esto es para poner color de fondo*/
+    text-align: center;
+
+}
+
+h2{
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*fuente*/
+
+}
+
+p{
+    color: blue;
+    font-size: larger;
+
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    text-align: center;
+    border-right: 5px dashed blue;
+
+}
+
+.destacados{
+    color: rgb(25, 223, 42);
+    font-weight: bold;
+    font-style: italic;
+
+}

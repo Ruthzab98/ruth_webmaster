@@ -1,0 +1,17 @@
+h1{
+    color: rgb(55, 4, 114);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(80, 148, 148);
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+img{
+    width: 200px;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
