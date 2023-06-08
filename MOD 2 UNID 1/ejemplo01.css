@@ -1,0 +1,18 @@
+.caja {
+    margin: 100px;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+width: 500px;
+height: 500px;
+box-shadow: 10px 10px 5px black;
+border-radius: 20px;
+}
+
+.texto {
+    background-color: rgb(125, 226, 43);
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 2px solid black;
+    
+
+}
