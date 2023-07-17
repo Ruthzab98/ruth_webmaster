@@ -1,0 +1,28 @@
+.contenedor{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    
+}
+
+.item1{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.item2{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.item3{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
