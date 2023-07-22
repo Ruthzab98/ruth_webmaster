@@ -1,0 +1,43 @@
+body {
+    background-color: tan;
+}
+
+@media screen and (max-width: 992px) {
+body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: olive;
+      }
+    }
+
+.contenedor {
+    background-color: rgb(71, 119, 95);
+
+} 
+
+nav {
+    background-color: rgb(170, 152, 76);
+    padding-bottom: 10px;
+}
+
+a {
+    color: black;
+}
+
+.contenido {
+    background-color: rgb(212, 222, 232);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 2px solid black;
+}
+    
+.contener {
+    background-color: antiquewhite;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid black;
+}
