@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color de Fondo con Cuadrados</title>
+    <style>
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        .seleccionado {
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadrado" id="cuadrado1"></div>
+    <div class="cuadrado" id="cuadrado2"></div>
+    <div class="cuadrado" id="cuadrado3"></div>
+
+    <script>
+        // Función para cambiar el color de fondo
+        function cambiarColorDeFondo(color) {
+            // Cambiar el color de fondo del documento
+            document.body.style.backgroundColor = color;
+        }
+
+        // Función para quitar la clase 'seleccionado' de todos los cuadrados
+        function deseleccionarCuadrados() {
+            const cuadrados = document.querySelectorAll('.cuadrado');
+            cuadrados.forEach(cuadrado => {
+                cuadrado.classList.remove('seleccionado');
+            });
+        }
+
+        // Obtener los elementos de los cuadrados y asignar colores
+        const cuadrado1 = document.getElementById("cuadrado1");
+        cuadrado1.style.backgroundColor = "red";
+        cuadrado1.addEventListener("click", function () {
+            deseleccionarCuadrados();
+            cuadrado1.classList.add('seleccionado');
+            cambiarColorDeFondo("red");
+        });
+
+        const cuadrado2 = document.getElementById("cuadrado2");
+        cuadrado2.style.backgroundColor = "blue";
+        cuadrado2.addEventListener("click", function () {
+            deseleccionarCuadrados();
+            cuadrado2.classList.add('seleccionado');
+            cambiarColorDeFondo("blue");
+        });
+
+        const cuadrado3 = document.getElementById("cuadrado3");
+        cuadrado3.style.backgroundColor = "green";
+        cuadrado3.addEventListener("click", function () {
+            deseleccionarCuadrados();
+            cuadrado3.classList.add('seleccionado');
+            cambiarColorDeFondo("green");
+        });
+    </script>
+</body>
+</html>
+

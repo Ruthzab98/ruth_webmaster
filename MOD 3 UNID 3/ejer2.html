@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    
+
+   <script>
+
+function encontrarMayor(arr){
+    if (arr.legth === 0) {
+        return undefined; 
+    }
+    let mayor = arr [0];
+
+    for (let i = 1; i <arr.legth; i++){
+        if (arr[i] > mayor) {
+            mayor = arr[i];
+        }
+    }
+
+    return mayor;
+}
+
+const numeros = [12, 5, 27, 8, 35, 15];
+const resultado = encontrarMayor(numeros);
+console.log("El número más grande es:", resultado);
+
+   </script>
+</body>
+</html>

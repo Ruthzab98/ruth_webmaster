@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres</title>
+</head>
+<body>
+    <textarea id="miTextarea" rows="4" cols="50"></textarea>
+    <p>Caracteres restantes: <span id="contador">0</span></p>
+
+    <script>
+        // Obtener el textarea y el elemento del contador
+        const textarea = document.getElementById("miTextarea");
+        const contador = document.getElementById("contador");
+
+        // Definir la cantidad máxima de caracteres permitidos
+        const maxCaracteres = 100;
+
+        // Agregar un evento de entrada al textarea
+        textarea.addEventListener("input", function() {
+            // Obtener la longitud actual del texto en el textarea
+            const longitudTexto = textarea.value.length;
+
+            // Calcular los caracteres restantes
+            const caracteresRestantes = maxCaracteres - longitudTexto;
+
+            // Actualizar el contador
+            contador.textContent = caracteresRestantes;
+
+            // Si se supera el límite de caracteres, puedes mostrar un mensaje o deshabilitar el textarea
+            if (caracteresRestantes < 0) {
+                // Aquí puedes realizar acciones adicionales, como mostrar un mensaje de advertencia
+                // o deshabilitar el textarea si se supera el límite.
+                textarea.style.borderColor = "red"; // Cambiar el borde a rojo como indicación
+            } else {
+                textarea.style.borderColor = ""; // Restaurar el borde a su estado normal
+            }
+        });
+    </script>
+</body>
+</html>
